@@ -1,0 +1,165 @@
+
+*
+{
+    margin:0;
+    padding: 0;
+    font-family: 'Poppins';
+    background-color: #050404;
+    box-sizing:border-box;
+    overflow-y: hidden;
+    overflow-x:hidden;
+}
+body{
+    overflow-x:hidden;
+    max-width:100%;
+}
+ 
+nav{
+    display: flex;
+    margin:auto;
+    justify-content: space-between;
+    align-items: center;
+    padding:10px 0;
+    width:85%;
+    color: #f4d35e;
+    flex-wrap: wrap;
+}
+
+nav ul li{
+    display:inline-block;
+    list-style:none;
+    padding:30px;
+}
+
+nav ul li a{
+    text-decoration: none;
+    font-size: 18px;
+    color:#f4d35e;
+    position:relative;
+}
+
+nav ul li a::after{
+    content: '';
+    position:absolute;
+    background-color: #f4d35e;
+    height: 3px;
+    width:0;
+    left:0;
+    bottom: -10px;
+    transition:0.3s;
+}
+
+nav ul li a:hover::after{
+    width: 100%;
+}
+
+.logo a{
+    text-decoration: none;
+    color:#f4d35e;
+}
+
+.codingprojs{
+    color:#ffff;
+    text-align: center;
+    margin-top:5%;
+    position:absolute;
+    margin-left:41.5%;
+    transform:translateY(3rem);
+    animation:fadeInUp 3s ease forwards;
+    background-color: transparent;
+    position:absolute;
+    opacity:0;
+}
+
+.coding{
+    color:#f4d35e;
+}
+
+hr{
+    width: 80%;
+    margin-left:10%;
+    margin-top:9%;
+    margin-bottom:0;
+    padding:0;
+    position:absolute;
+    transform:translateY(3rem);
+    animation:fadeInUp 3s ease forwards;
+    background-color: transparent;
+    position:absolute;
+    opacity:0;
+}
+.container{
+    margin-top:11%;
+    margin-left:12%;
+    width: 100%;
+    height: auto;
+    transform:translateY(3rem);
+    animation:fadeInUp 3s ease forwards;
+    background-color: transparent;
+    position:absolute;
+    opacity:0;
+
+}
+
+
+  
+  div.gallery img {
+    width: 100%;
+    height: auto;
+    border-radius: 7px;
+  }
+  
+  div.desc {
+    padding: 15px;
+    text-align: center;
+    background-color: #0e0e0e;
+    border-radius: 7px;
+    color:#f4d35e;
+    margin-top:2%;
+    cursor:pointer;
+  }
+
+  div.desc:hover{
+    background-color: #0a0a0a;
+    color:#ccb04b;
+  }
+
+  div a.githubTax{
+    text-decoration: none;
+  }
+
+
+  
+  * {
+    box-sizing: border-box;
+  }
+  
+  .responsive {
+    padding: 0 6px;
+    float: left;
+    width: 24.99999%;
+    
+  }
+  
+  @media only screen and (max-width: 700px) {
+    .responsive {
+      width: 49.99999%;
+      margin: 6px 0;
+    }
+  }
+  
+  @media only screen and (max-width: 500px) {
+    .responsive {
+      width: 100%;
+    }
+
+  }
+
+  @keyframes fadeInUp{
+    to{
+        opacity:1;
+        transform:translateY(0);
+        background-color: transparent;
+    }
+
+}
